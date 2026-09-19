@@ -1,0 +1,19 @@
+1. What is Python?
+A. Programming language
+B. Database
+C. Operating system
+D. Browser
+
+2. What is SQL?
+A. Query language
+B. Image format
+C. Operating system
+D. Browser
+
+3. Explain object-oriented programming.
+
+4. Which statement is
+correct about Python?
+A. Python is a high-level
+programming language
+B. Python is a database

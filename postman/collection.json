@@ -1,0 +1,26 @@
+{
+  "info": {"name": "DocuParse AI API", "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+  "variable": [
+    {"key": "base_url", "value": "http://127.0.0.1:8000/api/v1"},
+    {"key": "token", "value": ""}, {"key": "document_id", "value": ""},
+    {"key": "question_id", "value": ""}, {"key": "related_document_id", "value": ""}
+  ],
+  "item": [
+    {"name":"Register","request":{"method":"POST","url":"{{base_url}}/auth/register"}},
+    {"name":"Login","request":{"method":"POST","url":"{{base_url}}/auth/login"}},
+    {"name":"Current User","request":{"method":"GET","url":"{{base_url}}/auth/me"}},
+    {"name":"Upload Document","request":{"method":"POST","url":"{{base_url}}/documents/upload"}},
+    {"name":"List Documents","request":{"method":"GET","url":"{{base_url}}/documents"}},
+    {"name":"Document Details","request":{"method":"GET","url":"{{base_url}}/documents/{{document_id}}"}},
+    {"name":"Document Status","request":{"method":"GET","url":"{{base_url}}/documents/{{document_id}}/status"}},
+    {"name":"Document Text","request":{"method":"GET","url":"{{base_url}}/documents/{{document_id}}/text"}},
+    {"name":"Delete Document","request":{"method":"DELETE","url":"{{base_url}}/documents/{{document_id}}"}},
+    {"name":"Document Questions","request":{"method":"GET","url":"{{base_url}}/documents/{{document_id}}/questions"}},
+    {"name":"Single Question","request":{"method":"GET","url":"{{base_url}}/questions/{{question_id}}"}},
+    {"name":"Question Answer","request":{"method":"GET","url":"{{base_url}}/questions/{{question_id}}/answer"}},
+    {"name":"Document Warnings","request":{"method":"GET","url":"{{base_url}}/documents/{{document_id}}/warnings"}},
+    {"name":"Create Relationship","request":{"method":"POST","url":"{{base_url}}/documents/{{document_id}}/related"}},
+    {"name":"List Relationships","request":{"method":"GET","url":"{{base_url}}/documents/{{document_id}}/related"}},
+    {"name":"Delete Relationship","request":{"method":"DELETE","url":"{{base_url}}/documents/{{document_id}}/related/{{related_document_id}}"}}
+  ]
+}

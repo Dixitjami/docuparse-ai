@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+pydantic
+pydantic-settings
+email-validator
+python-dotenv
+python-jose[cryptography]
+pwdlib[argon2]
+python-multipart
+celery[redis]
+PyMuPDF
+Pillow
+pytesseract
+pytest
+httpx
